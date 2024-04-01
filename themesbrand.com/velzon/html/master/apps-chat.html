@@ -39,17 +39,17 @@
                 localStorage.setItem('userId', userId);
             }
             window.DD_RUM.init({
-                clientToken: 'pub6a3be5cece797944524f78496d27583e',
-                applicationId: '99c2c822-3541-43b9-992d-884194ea4944',
+                 clientToken: 'pub385abfddfec5fdbcd1e6092bc51ee418',
+                applicationId: '1b96459e-2140-4615-b47b-89586803c574',
                 site: 'us5.datadoghq.com',
                 service: 'admin-templates-',
                 env: '<ENV_NAME>',
                 sessionSampleRate: 100,
-                sessionReplaySampleRate: 20,
+                sessionReplaySampleRate: 80,
                 trackUserInteractions: true,
                 trackResources: true,
                 trackLongTasks: true,
-                defaultPrivacyLevel: 'mask-user-input'
+                defaultPrivacyLevel: 'allow'
             });
             window.DD_RUM.setUser({
                 id: userId
