@@ -106,6 +106,7 @@ h4 { margin: 0;  font-weight: bold;  font-size: 1.18em; }
             function generateUniqueUserId() {
                 return 'user_' + Math.random().toString(36).substr(2, 9);
             }
+		window.DD_RUM.getUser()
         });
     </script>
 </head>
